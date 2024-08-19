@@ -38,12 +38,12 @@ UMAMI_TRACKER=https://cloud.umami.is/
 
 Otherwise, you can set those on the umami instance as:
 
-- `umami.id`: the ID of the website you are tracking, it's mandatory.
+- `umami.id`\*: the ID of the website you are tracking.
 - `umami.tracker`: the url of the domain where the Umami instance is running, defaults to Umami Cloud `https://cloud.umami.is/`.
 
 Finally, the argument options available are:
 
-- `id`: the ID of the website you are tracking, it's mandatory.
+- `id`\*: the ID of the website you are tracking.
 - `tracker`: the url of the domain where the Umami instance is running, defaults to Umami Cloud `https://cloud.umami.is/`.
 - `agent`: the user agent of the user visiting. It will default to the most current Chrome one if not set [to avoid this bug](https://github.com/umami-software/node/issues/1).
 - `hostname`: Hostname of server, e.g. `"core.cards"`.
@@ -52,6 +52,8 @@ Finally, the argument options available are:
 - `screen`: Screen dimensions (eg. 1920x1080)
 - `title`: Page title
 - `data`: Event data properties
+
+\*The "id" is mandatory, so it needs to be set up either as an env variable `UMAMI_ID`, on the instance as `umami.id` or as the argument option `id`.
 
 They go, in order of preference: argument option, or instance option, or environment variable.
 
