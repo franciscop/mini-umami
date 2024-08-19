@@ -3,7 +3,9 @@
   "version": "0.2.0",
   "description": "A tiny Umami helper for Node.js",
   "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
-  "scripts": {},
+  "scripts": {
+    "test": "check-dts"
+  },
   "main": "index.js",
   "type": "module",
   "types": "index.d.ts",
@@ -11,6 +13,7 @@
   "files": [],
   "license": "UNLICENSED",
   "devDependencies": {
+    "check-dts": "^0.8.0",
     "express": "^4.19.2"
   }
 }
