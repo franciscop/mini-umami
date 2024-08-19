@@ -3,7 +3,7 @@
 A tiny universal JS library for tracking with Umami API:
 
 ```js
-import umami from "tiny-umami";
+import umami from "mini-umami";
 
 // Optional, otherwise will read process.env.UMAMI_ID
 umami.id = "50429a93-8479-4073-be80-d5d29c09c2ec"; // Your website id
