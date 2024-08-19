@@ -9,7 +9,7 @@ import umami from "tiny-umami";
 umami.id = "50429a93-8479-4073-be80-d5d29c09c2ec"; // Your website id
 
 // Optional, otherwise will read process.env.UMAMI_TRACKER, or default to Umami Cloud
-umami.tracker = "https://cloud.umami.is/"; // The Umami Tracker host URL, NOT your website tracker
+umami.tracker = "https://cloud.umami.is/"; // The Umami Tracker host URL, NOT your site URL
 
 // Track page views or events
 await umami.view("/exercises", { ...options });
@@ -92,7 +92,11 @@ await umami.event("signup");
 You can configure [the rest of the options](#options):
 
 ```js
-await umami.event("/hello", { agent: req.headers['user-agent'], ... });
+await umami.event("signup", {
+  title: "User Sign Up",
+  agent: req.headers["user-agent"],
+  data: { userId: 324 },
+});
 ```
 
 ### .express(req, res, next)
@@ -102,6 +106,8 @@ Automatically track page views with Express:
 ```js
 import umami from "mini-umami";
 
+// Assuming your .env is properly setup
+
 const app = express();
 app.use(umami.express);
 
@@ -109,3 +115,17 @@ app.use(umami.express);
 ```
 
 This method will automatically get extra information from Express like the `referrer`, `language`, `user-agent`, etc. However note that the screen size will be set as "1920x1080" for desktop and "360x720" for mobile since in the backend we cannot get the device size.
+
+You can then still track other things as usual:
+
+```js
+import umami from "mini-umami";
+
+const app = express();
+app.use(umami.express);
+
+app.post("/signup", (req, res) => {
+  umami.event("Signup");
+  // ...
+});
+```
