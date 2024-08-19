@@ -1,0 +1,15 @@
+{
+  "name": "mini-umami",
+  "version": "0.1.0",
+  "description": "A tiny Umami helper for Node.js",
+  "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
+  "scripts": {},
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "files": [],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "express": "^4.19.2"
+  }
+}
