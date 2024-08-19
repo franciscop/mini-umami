@@ -1,6 +1,6 @@
 {
   "name": "mini-umami",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "A tiny Umami helper for Node.js",
   "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
   "repository": "https://github.com/franciscop/mini-umami.git",
