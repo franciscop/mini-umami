@@ -1,7 +1,6 @@
 const defaultTracker = "https://cloud.umami.is/";
 // From https://www.whatismybrowser.com/guides/the-latest-user-agent/chrome
-const defaultAgent =
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36";
+const defaultAgent = `Mozilla/5.0 Umami/${process?.version || 1.0}`;
 
 // Return a default mobile or desktop size depending on the User Agent
 // https://stackoverflow.com/a/11381730/938236
