@@ -21,7 +21,6 @@ app.use(umami.express);
 
 Compared to `@umami/node`:
 
-- It's not blocked because of the User Agent [since this was a blocker issue](https://github.com/umami-software/node/issues/1).
 - Allows you to pass the client's User Agent as [`agent`](#options).
 - Allows you to pass the client's IP as [`ip`](#options).
 - Has a Express connector that automates all of the above with a simple middleware.

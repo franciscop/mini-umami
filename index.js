@@ -74,7 +74,11 @@ class Umami {
     if (env.NODE_ENV !== "production") return next();
 
     const options = {
-      ip: (req.headers["x-forwarded-for"] || "").split(",")[0],
+      ip: (
+        req.headers["x-forwarded-for"] ||
+        req.socket.remoteAddress ||
+        ""
+      ).split(",")[0],
       agent: req.headers["user-agent"],
       language: (req.headers["accept-language"] || "").split(",")[0],
       referrer: req.headers["referer"],
