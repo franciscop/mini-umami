@@ -49,7 +49,7 @@ class Umami {
       headers: {
         "Content-Type": "application/json",
         "User-Agent": userAgent,
-        "X-Client-IP": ip,
+        "X-Forwarded-For": ip,
       },
       body: JSON.stringify({ type: "event", payload: { website, ...opts } }),
     }).catch((err) => console.error(err.message));

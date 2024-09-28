@@ -45,8 +45,9 @@ Finally, the argument options available are:
 
 - `id`\*: the ID of the website you are tracking.
 - `tracker`: the url of the domain where the Umami instance is running, defaults to Umami Cloud `https://cloud.umami.is/`.
-- `agent`: the user agent of the user visiting. It will default to the most current Chrome one if not set [to avoid this bug](https://github.com/umami-software/node/issues/1).
-- `hostname`: Hostname of server, e.g. `"core.cards"`.
+- `ip`: the IP of the user/client. For Express, usually use `ip: req.headers['x-forwarded-for'] || req.socket.remoteAddress`.
+- `agent`: the user agent of the user visiting. It will default to Node.js.
+- `hostname`: Hostname of server, e.g. `"practice.cards"`.
 - `language`: Client language, e.g. `"en-US"`.
 - `referrer`: Page referrer, e.g. `https://x.com/`.
 - `screen`: Screen dimensions (eg. 1920x1080)
