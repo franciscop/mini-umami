@@ -2,19 +2,18 @@
   "name": "mini-umami",
   "version": "0.5.3",
   "description": "A tiny Umami helper for Node.js",
+  "repository": "github:franciscop/mini-umami",
   "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
-  "repository": "https://github.com/franciscop/mini-umami.git",
-  "bugs": "https://github.com/franciscop/mini-umami/issues",
   "funding": "https://www.paypal.me/franciscopresencia/19",
+  "license": "MIT",
+  "keywords": [],
   "scripts": {
     "test": "check-dts"
   },
   "main": "index.js",
   "type": "module",
   "types": "index.d.ts",
-  "keywords": [],
   "files": [],
-  "license": "UNLICENSED",
   "devDependencies": {
     "check-dts": "^0.8.0",
     "express": "^4.19.2"

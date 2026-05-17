@@ -1,4 +1,4 @@
-# Mini Umami [![npm install mini-umami](https://img.shields.io/badge/npm%20install-mini--umami-blue.svg)](https://www.npmjs.com/package/mini-umami) [![test badge](https://github.com/franciscop/mini-umami/workflows/tests/badge.svg "test badge")](https://github.com/franciscop/mini-umami/blob/master/.github/workflows/tests.yml) [![gzip size](https://badgen.net/bundlephobia/minzip/mini-umami?label=gzip&color=green)](https://bundlephobia.com/package/mini-umami)
+# Mini Umami [![mini-umami](https://img.shields.io/npm/v/mini-umami?label=mini-umami&color=greenlime)](https://www.npmjs.com/package/mini-umami) [![tests](https://github.com/franciscop/mini-umami/workflows/tests/badge.svg)](https://github.com/franciscop/mini-umami/actions) [![gzip size](https://img.badgesize.io/franciscop/mini-umami/master/index.js.svg?label=gzip&logo=&compression=gzip)](https://github.com/franciscop/mini-umami/blob/master/index.js) [![dependencies](https://img.shields.io/badge/dependencies-0-limegreen.svg)](https://github.com/franciscop/mini-umami/blob/master/package.json)
 
 A tiny universal JS library for tracking with Umami API:
 
