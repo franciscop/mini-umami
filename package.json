@@ -1,6 +1,6 @@
 {
   "name": "mini-umami",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "A tiny Umami helper for Node.js",
   "repository": "github:franciscop/mini-umami",
   "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
@@ -13,7 +13,10 @@
   "main": "index.js",
   "type": "module",
   "types": "index.d.ts",
-  "files": [],
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "devDependencies": {
     "check-dts": "^0.8.0",
     "express": "^4.19.2"

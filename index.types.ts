@@ -29,7 +29,13 @@ import umami from "./index.js";
   });
 
   umami.express({}, {}, () => {});
-  umami.server({});
+
+  const ctx = {
+    headers: { referer: "https://example.com/" },
+    url: new URL("https://example.com/path"),
+  };
+  umami.server({ ...ctx, platform: { production: true } });
+  umami.server({ ...ctx, machine: { production: true } });
 
   umami.id = "abc";
   umami.tracker = "abc";

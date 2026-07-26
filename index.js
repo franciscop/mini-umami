@@ -90,7 +90,10 @@ class Umami {
 
   // For @server/next, you probably don't care about this but I do
   async server(ctx) {
-    if (!ctx.machine.production) return;
+    // Runtime info moved from `ctx.machine` to `ctx.platform` in @server/next
+    // 0.27; read either so both generations work.
+    const platform = ctx.platform ?? ctx.machine;
+    if (!platform?.production) return;
     if (ctx.headers.referer || ctx.url.pathname.includes(".")) return;
 
     const options = {
