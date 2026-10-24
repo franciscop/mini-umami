@@ -24,9 +24,9 @@
     "index.d.ts"
   ],
   "devDependencies": {
-    "check-dts": "^0.8.0",
-    "express": "^4.19.2",
+    "check-dts": "^2.0.1",
+    "express": "^5.3.0",
     "oxlint": "^1.89.0",
-    "typescript": "^5.9.0"
+    "typescript": "^7.0.2"
   }
 }
